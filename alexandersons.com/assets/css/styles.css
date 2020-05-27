@@ -883,6 +883,22 @@ email {
 .moreAboutP{
 	width: 100%;
 }
+
+.googleSlider{
+	display:flex;
+	justify-content: center;
+}
+.portfolioLight{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.portfolioDark{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.portfolioTitle{
+	margin-bottom:20px;
+}
 /*=== END DIV SHITE===*/
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -1114,6 +1130,12 @@ footer{
 .moreAboutP{
 	width: 70%;
 }
+.portfolioTitle{
+	font-size:26px !important;
+}
+.portfolio p{
+	font-size: 17px !important;
+}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1321,6 +1343,23 @@ footer{
 }
 .p-r-0-lg{
 	padding-right: 0;
+}
+
+
+.portfolioTitle{
+
+	font-size:23px !important;
+}
+.portfolio p{
+	font-size: 15px !important;
+}
+.portfolioLight{
+	padding-top:0;
+	padding-bottom:0;
+}
+.portfolioDark{
+	padding-top:0;
+	padding-bottom:0;
 }
 
 }

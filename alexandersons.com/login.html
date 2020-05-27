@@ -10,7 +10,7 @@
 <script src="direction.js"></script>
 <!-- Required meta tags -->
 	<meta charset="utf-8">
-	<title>Alexander &amp; Sons | Portfolio</title>
+	<title>Alexander &amp; Sons | Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Font Awesome -->
@@ -29,93 +29,43 @@
 			  </button>
 	 			 <a class="navbar-brand" href="index.html"><img src="assets/images/alexanderSonsLogo.png" alt="Alexander &amp; Sons Logo"></a>			  
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-					    <li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a> <!-- Dont forget to do this shit for the blind people -->
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about.html">The Showroom</a>
-						 </li>
-						 <li class="nav-item active">  
-							<a class="nav-link" href="services.php">Services<span class="sr-only">(current)</span></a>
-						 </li>
-						 <li class="nav-item">  
-							<a class="nav-link" href="colors.html">Colors</a>
-						 </li>
-						 <li class="nav-item">  
-							<a class="nav-link" href="testimonials.html">Testimonials</a>
-						 </li>
-						 <li class="nav-item">  <!--use 'active' then its the page they be on-->
-							<a class="nav-link" href="contact.html">Contact</a>
-						 </li>				  
-					</ul>
-					<p id="phone">(408)-515-2525</p>
-<!-- 					<a href="#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
- -->			</div>
+ 				</div>
 			</nav>
 			<header>
-				<div class="jumbotron">
+				<div class="jumbotron d-flex justify-content-center">
 					<div id="jumbopacity">
-						<h1 class="display-1">Alexander & Sons<br>Services</h1>
+						<h1 class="display-1">Alexander & Sons</h1>
 						<div id="serviceMenu">
 								<div class="row">
-									<div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#stamped">Stamped Concrete</a>
-									</div><div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#sierra">Sierra Stone Overlay</a>
-									</div>
-									<div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#driveway">Driveways</a>
-									</div>
-									<div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#patio">Patios</a>
-									</div>
-									<div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#sidewalk">Sidewalks &amp; Walkways</a>
-									</div>
-									<div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#wall">Retaining Walls</a>
-									</div>
-									<div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#arbor">Arbor &amp; Pergolas</a>
-									</div>
-									<div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#stone">Stone Veneers</a>
-									</div>
-									<div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#flagStone">Slate &amp; Flagstone</a>
-									</div>
-									<div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#bricks">Bricks</a>
-									</div>
-									<div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#pavers">Paver Stone</a>
-									</div>
-									<div class="col-6 col-md-4 col-lg-3">
-										<a class="ghost-button" href="services.php#bbq">Outdoor Barbecues</a>
-									</div>
-									<div class="col-6 ">
-										<a class="ghost-button" href="services.php#lighting">Lighting</a>
-									</div>
-									<div class="col-6">
-										<a class="ghost-button" href="services.php#landscape">Landscape Planning</a>
-									</div>
+									<div class="col-12 text-center loginBubble mt-auto">
+							        	<div class="bubbleContent">
+								            <h2 class="font-md-lg mt-3 mb-2"> <span class="text-primary">Employee Login</span></h2>
+								            <p>Please enter your credentials below.</p>
+								            <form class="form-top" action="php/login.php" method="post">
+							                  	<div class="form-group row">
+							                  		<div class="col-11 ml-auto mr-auto">
+								                      	<input type="email" class="form-control" name="email" placeholder="Email" required>
+								                    </div>
+							                  	</div>
+									            <div class="form-group row mb-0">
+								                    <div class="col-11 ml-auto mr-auto">
+								                      <input type="password" class="form-control" name="password" placeholder="password" required>
+								                    	<small id="passwordHelpInline" class="text-muted">
+								                    		<a href="php/forgotPassword.php"><p class="underlined mt-2 mb-2" style="font-size: 110%;">Forgot Password?</p></a>
+								                      	</small>
+								                    </div>
+								                </div>
+									          	<div class="mt-1 mb-3">
+									              <button type="submit" class="btn btn-warning">Login</button>
+									            </div>
+									        </form>
+									    </div>
+							        </div>
 								</div>
 							</div>
 					</div>
-					<a href="about.html"><button class="visitShopButton">Visit the Showroom</button></a>
 				</div>
 			</header>
-			<main class="portfolio"> 
-			<button onclick="topFunction()" id="myBtn" title="Go to top" style="font-size: 28px;">&uarr;</button>
-				<div class="portfolioDark portfolioBottom white">
-					<div class="row">
-						<div class="colorCol colorCol2 moreAboutService col-12">
-							<h5><span id="stamped"></span>Driveways</h5> 
-							<p>We perform driveway services of all kinds. Not level? Starting to crack? Give us a call we'll help with it all. Stop by our show room to see all the various materials we can incorperate in your new driveway.</p>
-							<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQAX1cfHfLLea1junZIBrWfrA1UokFu0rpAFo26pRf3RdjuH9_ofu7YZUmqlt4mGX0RMRs0guRmMgI4/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-						
-			</main>
 			<footer>
 				<div class="contactUs">
 					<div class="row p-b-10 m-l-r-auto">
