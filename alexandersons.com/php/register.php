@@ -75,24 +75,24 @@ else{
         if ( $mysqli->query($sql) ){
             $_SESSION['active'] = 0; //0 until user activates their account with verify.php
             $_SESSION['logged_in'] = true; // So we know the user has logged in
-            $_SESSION['message'] = "Confirmation link has been sent to $email, please verify your account by clicking on the link in the message!";
+            $_SESSION['message'] = "Success, Please wait for authorization from system admin.";
             $_SESSION['directTo'] = "../login.html";
             $_SESSION['messageButton'] = "Go to Login";
             // Send registration confirmation link (verify.php)
-            $to = $email;
-            $subject = 'Bennett Website: Account Verification';
-            $headers = "From: bennettdierckman@gmail.com\r\n";
-            $message_body = "
-            Hey ".$first_name.",
+            // $to = $email;
+            // $subject = 'Bennett Website: Account Verification';
+            // $headers = "From: bennettdierckman@gmail.com\r\n";
+            // $message_body = "
+            // Hey ".$first_name.",
 
-            Thank you for signing up!
+            // Thank you for signing up!
 
-            Please click this link to activate your account:
+            // Please click this link to activate your account:
 
-            https://mjyintl.com/AlexanderAndSons_InfoSys/php/verify.php?email=".$email."&hash=".$hash;  
+            // https://mjyintl.com/AlexanderAndSons_InfoSys/php/verify.php?email=".$email."&hash=".$hash;  
 
-            mail( $to, $subject, $message_body, $headers );
-            mail( $professional_email, $subject, $message_body, $headers );
+            // mail( $to, $subject, $message_body, $headers );
+            // mail( $professional_email, $subject, $message_body, $headers );
 
             echo "<script type='text/javascript'> document.location = 'message.php'; </script>"; 
         }
